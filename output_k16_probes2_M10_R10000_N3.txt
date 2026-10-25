@@ -1,0 +1,123 @@
+Query: 0
+distanceTrue: 1175.03
+tHypercube: 0.001284
+tTrue: 0.007133
+tRange: 0.001159
+
+Query: 1
+distanceTrue: 1830.26
+tHypercube: 0.001066
+tTrue: 0.00799
+tRange: 0.001267
+
+Query: 2
+distanceTrue: 645.058
+tHypercube: 0.001088
+tTrue: 0.007853
+tRange: 0.001799
+
+Query: 3
+distanceTrue: 1394.31
+tHypercube: 0.001154
+tTrue: 0.00732
+tRange: 0.001163
+
+Query: 4
+distanceTrue: 1335.51
+tHypercube: 0.001105
+tTrue: 0.008721
+tRange: 0.001114
+
+Query: 5
+distanceTrue: 757.116
+tHypercube: 0.001024
+tTrue: 0.007095
+tRange: 0.001019
+
+Query: 6
+distanceTrue: 1489.44
+tHypercube: 0.001135
+tTrue: 0.007511
+tRange: 0.001009
+
+Query: 7
+distanceTrue: 1844.49
+tHypercube: 0.001082
+tTrue: 0.008035
+tRange: 0.001658
+
+Query: 8
+distanceTrue: 2235
+tHypercube: 0.00135
+tTrue: 0.007132
+tRange: 0.001075
+
+Query: 9
+distanceTrue: 1391.53
+tHypercube: 0.001048
+tTrue: 0.00749
+tRange: 0.001048
+
+Query: 10
+distanceTrue: 1421.33
+tHypercube: 0.001076
+tTrue: 0.007386
+tRange: 0.001723
+
+Query: 11
+distanceTrue: 2027.42
+tHypercube: 0.001092
+tTrue: 0.007148
+tRange: 0.001647
+
+Query: 12
+distanceTrue: 1215.53
+tHypercube: 0.001413
+tTrue: 0.008613
+tRange: 0.00122
+
+Query: 13
+distanceTrue: 1388.68
+tHypercube: 0.001042
+tTrue: 0.007051
+tRange: 0.001096
+
+Query: 14
+distanceTrue: 872.264
+tHypercube: 0.001279
+tTrue: 0.008117
+tRange: 0.001061
+
+Query: 15
+distanceTrue: 1918.04
+tHypercube: 0.001058
+tTrue: 0.007072
+tRange: 0.001108
+
+Query: 16
+Nearest neighbor-0: 693
+distanceHypercube: 2547.94
+distanceTrue: 1448.73
+tHypercube: 0.00102
+tTrue: 0.008262
+693
+tRange: 0.001714
+
+Query: 17
+distanceTrue: 1358.85
+tHypercube: 0.001115
+tTrue: 0.007244
+tRange: 0.001034
+
+Query: 18
+distanceTrue: 2185.63
+tHypercube: 0.001038
+tTrue: 0.007159
+tRange: 0.001871
+
+Query: 19
+distanceTrue: 1257.99
+tHypercube: 0.001981
+tTrue: 0.008182
+tRange: 0.001349
+
