@@ -50,6 +50,33 @@ The program `cluster` groups the images into **K** clusters with **k-means**:
 
 The quality of the clustering is evaluated with the **Silhouette** coefficient.
 
+## Dataset
+
+The repository includes the two MNIST dataset image files used by the programs (compressed with gzip):
+
+| File | Contents |
+|---|---|
+| `train-images-idx3-ubyte.gz` | MNIST **training set**: 60,000 images of handwritten digits (28x28 pixels) |
+| `t10k-images-idx3-ubyte.gz` | MNIST **test set**: 10,000 images of handwritten digits (28x28 pixels) |
+
+Each image is stored as 784 pixel values (0-255) and is read by `read_binary_file(…)` and converted into a `Point` object, i.e. a vector of 784 dimensions
+
+**How the code uses them:**
+- **`lsh`**: each training image is hashed into a bucket of each of the `L` hash tables. Each test image
+  is then used as a query, which is hashed the same way and compared only with the training images in
+  its buckets, to find its nearest neighbor, its N nearest neighbors and the neighbors within radius R.
+  The training images are also scanned by the exhaustive search, which gives the true distances and
+  times (`distanceTrue`, `tTrue`) for comparison
+- **`cube`**: the training images are mapped to vertices of the hypercube. Each test image is mapped to
+  its own vertex and searched in that vertex and its neighboring vertices (`probes`, up to `M` points),
+  with the same comparison against the exhaustive search
+- **`cluster`**: only the training images are used. They are grouped into K clusters with k-Means++
+  initialization, Lloyd's assignment and MacQueen update. The test set is not needed
+
+In the output files, `Query: i` is the position of the image in the test set and `Nearest neighbor-j: x` is the position of the image in the training set
+
+The programs read the **uncompressed** files, so decompress them first
+
 ---
 
 <u>**Compilation and Execution of the program:**</u>
