@@ -73,8 +73,6 @@ Each image is stored as 784 pixel values (0-255) and is read by `read_binary_fil
 - **`cluster`**: only the training images are used. They are grouped into K clusters with k-Means++
   initialization, Lloyd's assignment and MacQueen update. The test set is not needed
 
-In the output files, `Query: i` is the position of the image in the test set and `Nearest neighbor-j: x` is the position of the image in the training set
-
 The programs read the **uncompressed** files, so decompress them first
 
 ---
